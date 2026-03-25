@@ -39,8 +39,10 @@
     <h2>I am into <span id="typing"></span></h2>
 
     <p>
-      A business statistics graduate with expertise in statistics, social, & business research. Eager to apply analytical skills
-      to solve real–world problems & support data–driven decisions.
+      I am a Business Statistics graduate & data enthusiast with a strong interest in transforming data into meaningful insights. 
+      I have hands-on experience in data analysis, data visualization, & machine learning through academic projects & professional experience. 
+      I enjoy working with data end-to-end, from data cleaning & analysis to building interactive dashboards. 
+      I am also actively involved in organizational & volunteer activities, strengthening my teamwork, communication, & adaptability. 
     </p>
   </div>
 
@@ -163,7 +165,11 @@
 <section id="certification">
   <h2 data-aos="fade-up">Certification</h2>
 
-  <div class="cert-container">
+  <div class="cert-slider">
+
+  <button class="prev">&#10094;</button>
+
+  <div class="cert-track">
     <img src="images/fundamental-deep-learning.jpg">
     <img src="images/deep-learning-track.jpg">
     <img src="images/quality-management.jpg">
@@ -173,6 +179,10 @@
     <img src="images/ukm-penalaran.jpg">
     <img src="images/CEFR-B1.jpg">
   </div>
+
+  <button class="next">&#10095;</button>
+
+</div>
 </section>
 
 <!-- CONTACT -->
@@ -228,6 +238,24 @@ function type(){
 }
 type();
 
+</script>
+
+<script>
+const track = document.querySelector('.cert-track');
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+
+let position = 0;
+
+next.addEventListener('click', () => {
+  position -= 270;
+  track.style.transform = `translateX(${position}px)`;
+});
+
+prev.addEventListener('click', () => {
+  position += 270; 
+  track.style.transform = `translateX(${position}px)`;
+});
 </script>
 
 </body>
