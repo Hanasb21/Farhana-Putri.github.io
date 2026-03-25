@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Farhana Putri </title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>Farhana</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="images/profile.jpg" class="profile">
+  <h1>Farhana Putri</h1>
+  <p>Statistician | Data Enthusiast</p>
+  <p class="tagline">Analyzing and Visualizing Data to Support Better Decisions</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade">
+  <h2>About Me</h2>
+  <p>
+    Bachelor of Applied Business Statistics from ITS Surabaya.
+    Experienced in academic projects, internship, and organizational activities.
+    Strong interest in data analysis, business intelligence, and research.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3><i class="fas fa-chart-line"></i> Analytical Tools</h3>
+      <p>SQL, Excel, Python, Machine Learning, Power BI, Looker Studio</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-user"></i> Soft Skills</h3>
+      <p>Initiative, Attention to Detail, Teamwork, Communication</p>
+    </div>
+  </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section id="experience" class="fade">
+  <h2>Internship Experience</h2>
+
+  <div class="card">
+    <h3>BAPPEDA Bantul (Feb - Jun 2025)</h3>
+    <p>
+      Supported administrative and analytical tasks in the Planning Division.
+      Assisted in reports, documentation, and meeting minutes.
+    </p>
+
+    <ul>
+      <li>Interactive forecasting dashboard</li>
+      <li>Published video on official Instagram</li>
+      <li>Infographic in regional profile book</li>
+    </ul>
+
+    <!-- LINK -->
+    <p>
+      <a href="https://interactivedashboardbyhana.shinyapps.io/PERAMALANEKONOMIBANTUL/" target="_blank">Dashboard</a> |
+      <a href="https://www.instagram.com/reel/DLoJq-YtZ7o/" target="_blank">Video</a>
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="fade">
+  <h2>Project Experience</h2>
+
+  <!-- PROJECT 1 -->
+  <div class="card">
+    <h3>Customer Satisfaction Analysis</h3>
+    <p>Survey-based research analyzing service quality using IPA & CSI.</p>
+  </div>
+
+  <!-- PROJECT 2 -->
+  <div class="card">
+    <h3>Coffee Sales Analysis (Excel)</h3>
+
+    <!-- GAMBAR -->
+    <img src="images/excel.png">
+
+    <!-- LINK -->
+    <a href="https://drive.google.com/file/d/1hd2IdF2VcInbHLpBMqTFPgWyuMR4jBDi/view?usp=sharing" target="_blank">View Project</a>
+
+    <p>
+      Built interactive dashboard using Pivot Tables, KPI cards, and slicers.
+      Identified seasonal trends and payment behavior.
+    </p>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="card">
+    <h3>Machine Learning Sales Analysis</h3>
+
+    <img src="images/ml.png">
+
+    <a href="https://hanasb21.github.io/FP-Coffee-Sales-Analysis/" target="_blank">View Project</a>
+
+    <p>
+      Used XGBoost to predict net sales (R² 70.7%).
+      Identified high-end products as key drivers.
+    </p>
+  </div>
+
+  <!-- PROJECT 4 -->
+  <div class="card">
+    <h3>Northwind SQL Analysis</h3>
+
+    <a href="https://github.com/Hanasb21/FP-Northwind-SQL-Analysis" target="_blank">View Project</a>
+
+    <p>
+      Performed SQL joins, aggregation, and business analysis.
+    </p>
+  </div>
+
+</section>
+
+<!-- ORGANIZATION -->
+<section class="fade">
+  <h2>Organization & Committee Experience</h2>
+
+  <div class="card">
+    <h3>Mentor Staff - GERIGI ITS</h3>
+    <p>
+      Guided new students and facilitated adaptation programs.
+      Developed leadership and communication skills.
+    </p>
+  </div>
+
+  <div class="card">
+    <p>
+      Multiple roles in event, technical, and disciplinary divisions
+      across HIMADATA ITS & UKM Penalaran.
+    </p>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="fade">
+  <h2>Courses & Certifications</h2>
+
+  <div class="card">
+    <h3>Deep Learning - Digital Talent Scholarship (2025)</h3>
+    <p>
+      Completed Python, statistics, machine learning, and model evaluation training.
+    </p>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade">
+  <h2>Contact</h2>
+  <p>Email: farhanaputri315@gmail.com</p>
+  <p>Phone: 089501689211</p>
+
+  <div class="social">
+    <a href="https://www.linkedin.com/in/farhana-putri/"><i class="fab fa-linkedin"></i></a>
+    <a href="farhanaputri315@gmail.com"><i class="fab fa-email"></i></a>
+    <a href="https://wa.me/6289501689211"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Farhana Putri</p>
+</footer>
+
+<script>
+const faders = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+  faders.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
