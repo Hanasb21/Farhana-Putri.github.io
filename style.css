@@ -1,15 +1,44 @@
-body {
+/* BODY */
+body { 
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #0f172a;
+  background: linear-gradient(135deg, #0f2027, #2c5364, #1c1c1c);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
   color: white;
+  overflow-x: hidden;
 }
 
-#particles-js {
+/* BLUR GLOW EFFECT */
+body::before {
+  content: "";
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 500px;
+  background: rgba(0, 255, 255, 0.15);
+  filter: blur(150px);
+  top: -100px;
+  left: -100px;
   z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 0, 255, 0.15);
+  filter: blur(150px);
+  bottom: -100px;
+  right: -100px;
+  z-index: -1;
+}
+
+/* ANIMASI GRADIENT */
+@keyframes gradientMove {
+  0% { background-position: 0% }
+  50% { background-position: 100% }
+  100% { background-position: 0% }
 }
 
 /* NAV */
@@ -18,6 +47,7 @@ nav {
   justify-content: space-between;
   padding: 20px 10%;
   background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px); 
 }
 
 nav ul {
@@ -47,6 +77,26 @@ nav a {
   color: #3b82f6;
 }
 
+/* TEXT SIZE */
+h1 {
+  font-size: 52px;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+  /* gradient text */
+  background: linear-gradient(90deg, #00f2fe, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  font-size: 22px;
+}
+
 /* SKILLS */
 .skills-container {
   display: grid;
@@ -56,15 +106,17 @@ nav a {
 }
 
 .skill {
-  background: #1e293b;
+  background: rgba(30, 41, 59, 0.7); 
   padding: 15px;
   border-radius: 10px;
   text-align: center;
   transition: 0.3s;
+  backdrop-filter: blur(10px);
 }
 
 .skill:hover {
   box-shadow: 0 0 15px #3b82f6;
+  transform: translateY(-5px);
 }
 
 /* PROJECT */
@@ -76,10 +128,11 @@ nav a {
 }
 
 .project-card {
-  background: #1e293b;
+  background: rgba(30, 41, 59, 0.7);
   padding: 15px;
   border-radius: 12px;
   transition: 0.3s;
+  backdrop-filter: blur(10px);
 }
 
 .project-card img {
@@ -90,7 +143,7 @@ nav a {
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 20px #3b82f6;
+  box-shadow: 0 0 25px #3b82f6;
 }
 
 /* TIMELINE */
@@ -145,7 +198,7 @@ nav a {
   color: #ccc;
 }
 
-/* HOVER EFFECT */
+/* HOVER */
 .timeline-item:hover {
   transform: translateX(5px);
   transition: 0.3s;
@@ -164,8 +217,57 @@ nav a {
 }
 
 /* CONTACT */
-.contact-container {
+#contact {
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.contact-desc {
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+/* PDF */
+.pdf-container {
+  max-width: 800px;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+/* BUTTON */
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #2563eb;
+  box-shadow: 0 0 15px #3b82f6;
+}
+
+/* ICONS */
+.contact-icons {
+  margin-top: 30px;
   display: flex;
-  justify-content: space-between;
-  padding: 50px 10%;
+  justify-content: center;
+  gap: 25px;
+}
+
+.contact-icons a {
+  font-size: 28px;
+  color: white;
+  transition: 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #3b82f6;
+  transform: scale(1.2);
 }
