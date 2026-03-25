@@ -1,195 +1,237 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio | Farhana Putri </title>
-  <link rel="stylesheet" href="style.css">
+  <title>Farhana Putri</title>
 
-  <!-- ICON -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<!-- PARTICLES -->
+<div id="particles-js"></div>
 
 <!-- NAVBAR -->
 <nav>
   <h2>Farhana</h2>
   <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+    <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+    <li><a href="#experience"><i class="fas fa-timeline"></i> Experience</a></li>
+    <li><a href="#certification"><i class="fas fa-certificate"></i> Certification</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-  <img src="images/profile.jpg" class="profile">
-  <h1>Farhana Putri</h1>
-  <p>Statistician | Data Enthusiast</p>
-  <p class="tagline">Analyzing and Visualizing Data to Support Better Decisions</p>
-</section>
+<section id="about" class="hero">
+  <div class="hero-left" data-aos="fade-right">
+    <h1>Hi!, I'm <span class="highlight">Farhana Putri</span></h1>
+    <h2>I am into <span id="typing"></span></h2>
 
-<!-- ABOUT -->
-<section id="about" class="fade">
-  <h2>About Me</h2>
-  <p>
-    Bachelor of Applied Business Statistics from ITS Surabaya.
-    Experienced in academic projects, internship, and organizational activities.
-    Strong interest in data analysis, business intelligence, and research.
-  </p>
+    <p>
+      A business statistics graduate with expertise in statistics, social, & business research. Eager to apply analytical skills
+      to solve real–world problems & support data–driven decisions.
+    </p>
+  </div>
 
-  <div class="grid">
-    <div class="card">
-      <h3><i class="fas fa-chart-line"></i> Analytical Tools</h3>
-      <p>SQL, Excel, Python, Machine Learning, Power BI, Looker Studio</p>
-    </div>
-
-    <div class="card">
-      <h3><i class="fas fa-user"></i> Soft Skills</h3>
-      <p>Initiative, Attention to Detail, Teamwork, Communication</p>
-    </div>
+  <div class="hero-right" data-aos="fade-left">
+    <img src="images/profile.jpg">
   </div>
 </section>
 
-<!-- INTERNSHIP -->
-<section id="experience" class="fade">
-  <h2>Internship Experience</h2>
+<!-- SKILLS -->
+<section id="skills">
+  <h2 data-aos="fade-up">Skills</h2>
 
-  <div class="card">
-    <h3>BAPPEDA Bantul (Feb - Jun 2025)</h3>
-    <p>
-      Supported administrative and analytical tasks in the Planning Division.
-      Assisted in reports, documentation, and meeting minutes.
-    </p>
+  <div class="skills-container">
+    <div class="skill"><i class="fas fa-file-excel"></i> Excel</div>
+    <div class="skill"><i class="fas fa-database"></i> SQL</div>
+    <div class="skill"><i class="fas fa-chart-bar"></i> SPSS</div>
+    <div class="skill"><i class="fas fa-chart-line"></i> Minitab</div>
+    <div class="skill"><i class="fab fa-python"></i> Python</div>
+    <div class="skill"><i class="fas fa-chart-pie"></i> Power BI</div>
+    <div class="skill"><i class="fas fa-chart-area"></i> Looker Studio</div>
+    <div class="skill"><i class="fas fa-palette"></i> Canva</div>
 
-    <ul>
-      <li>Interactive forecasting dashboard</li>
-      <li>Published video on official Instagram</li>
-      <li>Infographic in regional profile book</li>
-    </ul>
-
-    <!-- LINK -->
-    <p>
-      <a href="https://interactivedashboardbyhana.shinyapps.io/PERAMALANEKONOMIBANTUL/" target="_blank">Dashboard</a> |
-      <a href="https://www.instagram.com/reel/DLoJq-YtZ7o/" target="_blank">Video</a>
-    </p>
+    <div class="skill"><i class="fas fa-lightbulb"></i> Initiative</div>
+    <div class="skill"><i class="fas fa-eye"></i> Attention to Detail</div>
+    <div class="skill"><i class="fas fa-comments"></i> Communication</div>
+    <div class="skill"><i class="fas fa-users"></i> Teamwork</div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="fade">
-  <h2>Project Experience</h2>
+<section id="projects">
+  <h2 data-aos="fade-up">Projects</h2>
 
-  <!-- PROJECT 1 -->
-  <div class="card">
-    <h3>Customer Satisfaction Analysis</h3>
-    <p>Survey-based research analyzing service quality using IPA & CSI.</p>
-  </div>
+  <div class="projects-container">
 
-  <!-- PROJECT 2 -->
-  <div class="card">
-    <h3>Coffee Sales Analysis (Excel)</h3>
+    <div class="project-card" data-aos="zoom-in">
+      <img src="images/excel.png">
+      <h3>Sales Analysis (Excel)</h3>
+      <a href="https://drive.google.com/file/d/1hd2IdF2VcInbHLpBMqTFPgWyuMR4jBDi/view?usp=sharing" target="_blank">view</a>
+      <p>Data cleaning, pivot tables & dashboard insights.</p>
+    </div>
 
-    <!-- GAMBAR -->
-    <img src="images/excel.png">
+    <div class="project-card" data-aos="zoom-in">
+      <img src="images/ml.png">
+      <h3>Machine Learning Sales</h3>
+      <a href="https://farhana-putri.github.io/FP-Coffee-Sales-Analysis/" target="_blank">view</a>
+      <p>Identified key sales drivers using ML.</p>
+    </div>
 
-    <!-- LINK -->
-    <a href="https://drive.google.com/file/d/1hd2IdF2VcInbHLpBMqTFPgWyuMR4jBDi/view?usp=sharing" target="_blank">View Project</a>
+    <div class="project-card" data-aos="zoom-in">
+      <img src="images/sql.png">
+      <h3>Northwind SQL</h3>
+      <a href="https://github.com/Farhana-Putri/FP-Northwind-SQL-Analysis" target="_blank">view</a>
+      <p>Analyzed business database with SQL queries.</p>
+    </div>
 
-    <p>
-      Built interactive dashboard using Pivot Tables, KPI cards, and slicers.
-      Identified seasonal trends and payment behavior.
-    </p>
-  </div>
+    <div class="project-card" data-aos="zoom-in">
+      <img src="images/dashboard.png">
+      <h3>Forecast Dashboard</h3>
+      <a href="https://interactivedashboardbyhana.shinyapps.io/PERAMALANEKONOMIBANTUL/" target="_blank">view</a>
+      <p>Interactive business forecasting visualization.</p>
+    </div>
 
-  <!-- PROJECT 3 -->
-  <div class="card">
-    <h3>Machine Learning Sales Analysis</h3>
+    <div class="project-card" data-aos="zoom-in">
+      <img src="images/infographics.png">
+      <h3>Macroeconomic Overview Visualization</h3>
+      <a href="https://www.instagram.com/bappedabantul/reel/DLoJq-YtZ7o/" target="_blank">view</a>
+      <p>Produced a data visualization video presenting key macroeconomic indicators of Bantul Regency.</p>
+    </div>
 
-    <img src="images/ml.png">
-
-    <a href="https://hanasb21.github.io/FP-Coffee-Sales-Analysis/" target="_blank">View Project</a>
-
-    <p>
-      Used XGBoost to predict net sales (R² 70.7%).
-      Identified high-end products as key drivers.
-    </p>
-  </div>
-
-  <!-- PROJECT 4 -->
-  <div class="card">
-    <h3>Northwind SQL Analysis</h3>
-
-    <a href="https://github.com/Hanasb21/FP-Northwind-SQL-Analysis" target="_blank">View Project</a>
-
-    <p>
-      Performed SQL joins, aggregation, and business analysis.
-    </p>
-  </div>
-
-</section>
-
-<!-- ORGANIZATION -->
-<section class="fade">
-  <h2>Organization & Committee Experience</h2>
-
-  <div class="card">
-    <h3>Mentor Staff - GERIGI ITS</h3>
-    <p>
-      Guided new students and facilitated adaptation programs.
-      Developed leadership and communication skills.
-    </p>
-  </div>
-
-  <div class="card">
-    <p>
-      Multiple roles in event, technical, and disciplinary divisions
-      across HIMADATA ITS & UKM Penalaran.
-    </p>
   </div>
 </section>
 
-<!-- CERTIFICATES -->
-<section class="fade">
-  <h2>Courses & Certifications</h2>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2 data-aos="fade-up">Experience</h2>
 
-  <div class="card">
-    <h3>Deep Learning - Digital Talent Scholarship (2025)</h3>
-    <p>
-      Completed Python, statistics, machine learning, and model evaluation training.
-    </p>
+  <div class="timeline">
+
+    <div class="timeline-item" data-aos="fade-right">
+      <h3>BAPPEDA Kabupaten Bantul (2025)</h3>
+      <h4>Data Analyst & Administrative Support Intern</h4>
+      <p>
+        Verified regional development data and supported macroeconomic reports. 
+        Assisted administrative tasks including documentation and meeting records.
+      </p>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-left">
+      <h3>DD Coffee Shop (2024)</h3>
+      <h4>Market Research (Project-Based)</h4>
+      <p>
+        Conducted customer satisfaction analysis using IPA & CSI methods 
+        to generate actionable insights for service improvement.
+      </p>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-right">
+      <h3>GERIGI ITS (2023)</h3>
+      <h4>Mentor Staff</h4>
+      <p>
+        Guided 17 new students during orientation and supported event coordination 
+        to ensure smooth program execution.
+      </p>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-left">
+      <h3>UKM Penalaran ITS (2022)</h3>
+      <h4>Kastra Staff</h4>
+      <p>
+        Contributed to research-based programs and supported event planning 
+        through teamwork and coordination.
+      </p>
+    </div>
+
   </div>
+</section>
 
+<!-- CERTIFICATION -->
+<section id="certification">
+  <h2 data-aos="fade-up">Certification</h2>
+
+  <div class="cert-container">
+    <img src="images/fundamental-deep-learning.jpg">
+    <img src="images/deep-learning-track.jpg">
+    <img src="quality-management.jpg">
+    <img src="finalist-rtc.jpg">
+    <img src="betakastrat.jpg">
+    <img src="gerigi-its.jpg">
+    <img src="ukm-penalaran.jpg">
+    <img src="CEFR-B1.jpg">
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="fade">
-  <h2>Contact</h2>
-  <p>Email: farhanaputri315@gmail.com</p>
-  <p>Phone: 089501689211</p>
+<section id="contact">
+  <div class="contact-container">
 
-  <div class="social">
-    <a href="https://www.linkedin.com/in/farhana-putri/"><i class="fab fa-linkedin"></i></a>
-    <a href="farhanaputri315@gmail.com"><i class="fab fa-email"></i></a>
-    <a href="https://wa.me/6289501689211"><i class="fab fa-whatsapp"></i></a>
+    <div class="left">
+      <h2>Let's Connect!</h2>
+      <p>You can also view my complete portfolio here:</p>
+      <a href="https://drive.google.com/file/d/1GRFA4uaz5uuPVqkkGb3pVRWEJap2uKCq/view?usp=sharing" target="_blank">Portfolio</a>
+    </div>
+
+    <div class="right">
+      <a href="https://www.linkedin.com/in/farhana-putri/"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:farhanaputri315@gmail.com"><i class="fab fa-envelope"></i></a>
+      <a href="https://wa.me/6289501689211"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Farhana Putri</p>
+  <p>© Farhana Putri | 2026 </p>
 </footer>
 
-<script>
-const faders = document.querySelectorAll('.fade');
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-window.addEventListener('scroll', () => {
-  faders.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      el.classList.add('show');
-    }
-  });
+<script>
+AOS.init();
+
+// typing
+const roles = ["Data Analyst","Data Scientist","Market Research","Research Assistant","Virtual Assistant"];
+let i=0,j=0,text="",isDeleting=false;
+
+function type(){
+  text=roles[i];
+  document.getElementById("typing").textContent=text.substring(0,j);
+
+  if(!isDeleting) j++; else j--;
+
+  if(j==text.length) isDeleting=true;
+  if(j==0){isDeleting=false;i=(i+1)%roles.length;}
+
+  setTimeout(type,isDeleting?50:100);
+}
+type();
+
+// particles
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 60 },
+    size: { value: 3 },
+    move: { speed: 2 }
+  }
 });
 </script>
 
