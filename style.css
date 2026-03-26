@@ -200,6 +200,25 @@ h3 {
   box-shadow: 0 0 20px #3b82f6;
 }
 
+.skill-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.skill-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.skill-icon img {
+  filter: drop-shadow(0 0 5px rgba(59,130,246,0.5));
+}
+
 /* ================= PROJECT ================= */
 .projects-container {
   display: grid;
