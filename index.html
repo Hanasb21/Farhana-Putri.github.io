@@ -21,19 +21,21 @@
 
 <!-- NAVBAR -->
 <nav>
-  <h2>Farhana Putri </h2>
-  <ul>
-    <li><a href="#about"> ABOUT <i class="fas fa-user"></i> </a></li>
-    <li><a href="#skills"> SKILLS <i class="fas fa-code"></i> </a></li>
-    <li><a href="#projects"> PROJECTS <i class="fas fa-diagram-project"></i> </a></li>
-    <li><a href="#experience"> EXPERIENCE <i class="fas fa-briefcase"></i> </a></li>
-    <li><a href="#certification"> CERTIFICATION <i class="fas fa-medal"></i> </a></li>
-    <li><a href="#contact"> CONTACT <i class="fas fa-envelope-open"></i> </a></li>
-  </ul>
+  <div class="nav-container">
+    <h2 class="logo">Farhana Putri</h2>
+    <ul class="nav-menu">
+      <li><a href="#about"> ABOUT <i class="fas fa-user"></i> </a></li>
+      <li><a href="#skills"> SKILLS <i class="fas fa-code"></i> </a></li>
+      <li><a href="#projects"> PROJECTS <i class="fas fa-diagram-project"></i> </a></li>
+      <li><a href="#experience"> EXPERIENCE <i class="fas fa-briefcase"></i> </a></li>
+      <li><a href="#certification"> CERTIFICATION <i class="fas fa-medal"></i> </a></li>
+      <li><a href="#contact"> CONTACT <i class="fas fa-envelope-open"></i> </a></li>
+    </ul>
+  </div>
 </nav>
 
 <!-- HERO -->
-<section id="ABOUT" class="hero">
+<section id="about" class="hero">
   <div class="hero-left" data-aos="fade-right">
     <h1> HANA IS <span class="highlight"> HERE!! </span></h1>
     <h2>I am into <span id="typing"></span></h2>
@@ -50,7 +52,7 @@
 </section>
 
 <!-- SKILLS -->
-<section id="SKILLS">
+<section id="skills">
   <h2 data-aos="fade-up"> <i class="fas fa-code"></i> SKILLS <i class="fas fa-code"></i> </h2>
 
   <div class="skills-container">
@@ -71,7 +73,7 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="PROJECTS">
+<section id="projects">
   <h2 data-aos="fade-up"><i class="fas fa-diagram-project"></i> PROJECTS <i class="fas fa-diagram-project"></i> </h2>
 
   <div class="projects-container">
@@ -123,7 +125,7 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section id="EXPERIENCE">
+<section id="Experience">
   <h2 data-aos="fade-up"><i class="fas fa-briefcase"></i> EXPERIENCE <i class="fas fa-briefcase"></i> </h2>
 
   <div class="timeline">
@@ -168,48 +170,52 @@
 </section>
 
 <!-- CERTIFICATION -->
-<section id="CERTIFICATION">
-  <h2 data-aos="fade-up"><i class="fas fa-medal"> CERTIFICATION <i class="fas fa-medal"> </i></h2>
+<section id="certification">
+  <h2 data-aos="fade-up">
+    <i class="fas fa-medal"></i> CERTIFICATION <i class="fas fa-medal"></i>
+  </h2>
 
-<div class="cert-track">
+  <div class="cert-slider">
+    <div class="cert-track">
 
-  <div class="cert-card">
-    <img src="images/fundamental-deep-learning.jpg">
+      <div class="cert-card">
+        <img src="images/fundamental-deep-learning.jpg">
+      </div>
+
+      <div class="cert-card">
+        <img src="images/deep-learning-track.jpg">
+      </div>
+
+      <div class="cert-card">
+        <img src="images/quality-management.jpg">
+      </div>
+
+      <div class="cert-card">
+        <img src="images/finalist-rtc.jpg">
+      </div>
+
+      <div class="cert-card">
+        <img src="images/betakastrat.jpg">
+      </div>
+
+      <div class="cert-card">
+        <img src="images/gerigi-its.jpg">
+      </div>
+
+      <div class="cert-card">
+        <img src="images/ukkm-penalaran.jpg">
+      </div>
+
+      <div class="cert-card">
+        <img src="images/CEFR-B1.jpg">
+      </div>
+
+    </div>
   </div>
-
-  <div class="cert-card">
-    <img src="images/deep-learning-track.jpg">
-  </div>
-
-  <div class="cert-card">
-    <img src="images/quality-management.jpg">
-  </div>
-
-  <div class="cert-card">
-    <img src="images/finalist-rtc.jpg">
-  </div>
-
-  <div class="cert-card">
-    <img src="images/betakastrat.jpg">
-  </div>
-
-  <div class="cert-card">
-    <img src="images/gerigi-its.jpg">
-  </div>
-
-  <div class="cert-card">
-    <img src="images/ukkm-penalaran.jpg">
-  </div>
-
-  <div class="cert-card">
-    <img src="images/CEFR-B1.jpg">
-  </div>
-  
-</div>
 </section>
 
 <!-- CONTACT -->
-<section id="CONTACT">
+<section id="Contact">
   <h2 data-aos="fade-up">LET'S CONNECT!</h2>
 
   <p class="contact-desc">
@@ -226,10 +232,10 @@
   </div>
 
   <!-- CONTACT ICONS -->
-  <div class="contact-icons" data-aos="fade-up">
-    <a href="https://www.linkedin.com/in/farhana-putri/"><i class="fab fa-linkedin"></i></a>
+  <div class="contact-icons">
+    <a href="https://www.linkedin.com/in/farhana-putri/" target="_blank"><i class="fab fa-linkedin"></i></a>
     <a href="mailto:farhanaputri315@gmail.com"><i class="fas fa-envelope"></i></a>
-    <a href="https://wa.me/6289501689211"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://wa.me/6289501689211" target="_blank"><i class="fab fa-whatsapp"></i></a>
   </div>
 
 </section>
@@ -260,15 +266,6 @@ function type(){
   setTimeout(type,isDeleting?50:100);
 }
 type();
-
-</script>
-
-<script>
-const track = document.querySelector('.cert-track');
-const next = document.querySelector('.next');
-const prev = document.querySelector('.prev');
-
-let position = 0;
 
 </script>
 
