@@ -98,6 +98,7 @@ nav a {
 
 .hero-left {
   max-width: 500px;
+  text-align: left;
 }
 
 .hero h1 {
@@ -110,10 +111,39 @@ nav a {
   margin-top: 10px;
 }
 
+.hero-left h2 {
+  text-align: left;
+}
+
 .hero p {
   font-size: 15px;
   color: #ccc;
   margin-top: 15px;
+}
+
+.hero-left h1,
+.hero-left h2,
+.hero-left p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero-left h2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.hero-left p {
+  margin-top: 10px;
+}
+
+.hero-left h1 {
+  margin-bottom: 5px;
+}
+
+.hero-left h2 {
+  font-weight: 500;
+  opacity: 0.9;
 }
 
 .hero img {
