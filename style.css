@@ -116,8 +116,8 @@ nav a {
 }
 
 .hero p {
-  font-size: 15px;
-  color: #ccc;
+  font-size: 20px;
+  color: #ffffff;
   margin-top: 15px;
 }
 
@@ -189,7 +189,7 @@ h3 {
 .skill {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 15px;
-  padding: 40px 20px;
+  padding: 35px 20px;
   text-align: center;
   transition: 0.3s;
   box-shadow: 0 0 10px rgba(255,255,255,0.1);
