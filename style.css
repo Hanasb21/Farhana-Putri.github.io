@@ -76,7 +76,7 @@ nav a {
 }
 
 .nav-menu li a {
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
   opacity: 0.8;
   transition: 0.3s;
@@ -116,7 +116,7 @@ nav a {
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   opacity: 0.8;
   margin-top: 15px;
@@ -220,11 +220,12 @@ h3 {
   filter: drop-shadow(0 0 5px rgba(59,130,246,0.5));
 }
 
-/* Text */
+/* Text made by farhanaputri*/
 .skill h3 {
   font-size: 12px;    
   font-weight: 600;   
   color: white;  
+  opacity: 0.8;
   
   margin: 10px 0 0;   
   letter-spacing: 0.5px; 
@@ -256,6 +257,21 @@ h3 {
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 25px #3b82f6;
+}
+
+.project-card h3 {
+  font-size: 24px;   
+  font-weight: 700;   
+  color: white;     
+  margin: 15px 0 10px; 
+}
+
+.project-card p {
+  font-size: 16px;      
+  color: white;    
+  opacity: 0.8;
+  line-height: 1.6;     
+  margin-bottom: 15px;  
 }
 
 /* ================= TIMELINE ================= */
@@ -294,19 +310,22 @@ h3 {
 
 .timeline-item h3 {
   margin: 0;
+  font-size: 24px;
   color: #3b82f6;
 }
 
 .timeline-item h4 {
   margin: 5px 0;
   font-weight: 400;
+  font-size: 20px;
   color: #cbd5f5;
 }
 
 .timeline-item p {
   margin: 5px 0;
-  font-size: 14px;
-  color: #ccc;
+  font-size: 16px;
+  color: white;
+  opacity: 0.8;
 }
 
 .timeline-item:hover {
