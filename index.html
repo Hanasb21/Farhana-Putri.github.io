@@ -184,7 +184,7 @@
     </div>
     
   </div>
-    <button class="show-btn" onclick="toggleShow('skillsList', this)">
+    <button class="show-btn" data-aos="fade-up" onclick="toggleShow('skillsList', this)">
   Show More
 </button>
 </section>
@@ -252,7 +252,7 @@
 
   </div>
   
-  <button class="show-btn" onclick="toggleShow('projectsList', this)">
+  <button class="show-btn" data-aos="fade-up" onclick="toggleShow('projectsList', this)">
   Show More
 </button>
 </section>
@@ -330,19 +330,19 @@
         <img src="images/gerigi-its.jpg">
       </div>
 
-      <div class="cert-card hidden-cert">
+      <div class="cert-card hidden">
         <img src="images/ukm-penalaran.jpg">
       </div>
 
-      <div class="cert-card hidden-cert">
+      <div class="cert-card hidden">
         <img src="images/pkti-td.jpg">
       </div>
 
-      <div class="cert-card hidden-cert">
+      <div class="cert-card hidden">
         <img src="images/betakastrat.jpg">
       </div>
 
-      <div class="cert-card hidden-cert">
+      <div class="cert-card hidden">
         <img src="images/p3m.jpg">
       </div>
 
@@ -352,7 +352,7 @@
 
     </div>
 
-<button class="show-btn" onclick="toggleShow('certList', this)">
+<button class="show-btn" data-aos="fade-up" onclick="toggleShow('certList', this)">
   Show More
 </button>
 </section>
@@ -417,14 +417,17 @@ type();
 </script>
 
 <script>
-  function toggleShow(id, btn){
-  const el = document.getElementById(id);
+function toggleShow(id, btn){
+  const container = document.getElementById(id);
+  const hiddenItems = container.querySelectorAll('.hidden');
 
-  if(el.classList.contains("show-less")){
-    el.classList.remove("show-less");
+  hiddenItems.forEach(item => {
+    item.style.display = (item.style.display === "block") ? "none" : "block";
+  });
+
+  if(btn.textContent.includes("More")){
     btn.textContent = "Show Less";
   } else {
-    el.classList.add("show-less");
     btn.textContent = "Show More";
   }
 }
