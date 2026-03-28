@@ -395,10 +395,14 @@ h3 {
   box-shadow: 0 0 20px #3b82f6;
 }
 
+#certification {
+  margin-bottom: 20px;
+}
+
 /* ================= CONTACT ================= */
 #contact {
   text-align: center;
-  padding: 80px 10%;
+  padding: 40px 10%;
   position: relative;
   z-index: 2;
 }
